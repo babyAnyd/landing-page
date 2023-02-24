@@ -1,0 +1,20 @@
+//main global imported scss files..
+
+//mixins
+@import './mixins/displays';
+@import './mixins/media-queries';
+
+
+// layouts
+@import './cssroot/cssroot';
+@import './layout/navbar';
+@import './layout/home-content';
+@import './layout/strategy-content';
+@import './layout/about-content';
+@import './layout/work-process-content';
+@import './layout/testimonials-content';
+@import './layout/pricing-titles';
+@import './components/buttons';
+
+
+

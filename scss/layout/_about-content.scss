@@ -1,0 +1,38 @@
+.section-about {
+    margin-top: 250px;
+
+}
+
+
+.about-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    width: 980px;
+    margin: auto;
+    @include for-desktop {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        width: 80%;
+        margin-top: 550px;
+    }
+    @include for-small-phone {
+        margin-top: 800px;
+        width: 90%;
+    }
+}
+
+.about-content img {
+    display: block;
+    margin: auto;
+}
+
+.about-content {
+    line-height: 2;
+}
+
+.about-content p {
+    color: rgb(71, 72, 73);
+}

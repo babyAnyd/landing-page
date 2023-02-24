@@ -1,0 +1,73 @@
+@include for-desktop {
+    .section-work-process {
+        padding-bottom: 350px;
+    }
+}
+
+.section-work-process {
+    min-height: 20vh;
+    background-color: aqua;
+    margin-top: 100px;
+    background-image: linear-gradient(90deg, rgba(214, 72, 186, 0.5), rgba(126, 129, 227, .5)), url(/images/desktop-table.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.work-title {
+    text-align: center;
+    width: 980px;
+    margin: auto;
+    padding: 75px 0 60px 0;
+    color: white;
+    @include for-desktop {
+        width: 90%;
+    }
+    @include for-large-phone {
+        width: 80%;
+    }
+}
+
+.work-title h2 {
+    margin-bottom: 20px;
+}
+
+.work-process-items {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 25px;
+    margin: auto;
+    width: 980px;
+    max-height: 300px;
+    padding-bottom: 80px;
+    @include for-desktop {  
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+        width: 75%;
+    }
+    @include for-large-phone {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+        width: 80%;
+    }
+}
+
+.work-process-items .process-items {
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 12px 10px 5px 1px rgba(224, 202, 202, 0.637);
+    background-color: white;
+}
+
+.process-items i,
+.process-items h4,
+.process-items p {
+    margin-bottom: 15px;
+}
+
+.process-items i {
+    color: rgb(235, 142, 235);
+}

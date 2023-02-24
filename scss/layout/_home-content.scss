@@ -1,0 +1,51 @@
+.section-home {
+    background-image: linear-gradient(90deg, rgba(249, 145, 229, .5), rgba(126, 129, 227, .5)), url(/images/backgroundlaptop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 850px;
+    background-size: cover;
+}
+
+.section-content {
+    max-width: 980px;
+    margin: auto;
+}
+
+.background-laptop {
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.content-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-items {
+    margin: 300px 0 200px 0;
+    text-align: center;
+}
+
+.content-items div,
+.content-items h1,
+.content-items p {
+    color: white;
+    margin: 20px 0;
+    line-height: 1.4;
+   
+}
+
+.content-items h1 {
+    font-size: 30px;
+    @include for-desktop {
+        font-size: 20px;
+    }
+}
+
+@include for-small-phone {
+    .content-items {
+        width: 90%;
+    }
+}

@@ -1,0 +1,97 @@
+
+.section-pricing {
+    min-height: 40vh;
+    background-color: #f2f2fe;
+    @include for-desktop {
+        margin-top: 350px;
+    }
+    padding-bottom: 100px;
+   @include for-large-phone {
+        margin-top: 700px;
+   }
+}
+
+// #f2f2fe;
+.pricing {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 980px;
+    margin: auto;
+    gap: 30px;
+    @include for-desktop {
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+    }
+    @include for-large-phone {
+        grid-template-columns: repeat(1, 1fr);
+        width: 80%;
+    }
+}
+
+.pricing-title {
+    text-align: center;
+    width: 980px;
+    margin: auto;
+    padding: 75px 0 65px 0;
+    @include for-desktop {
+        width: 90%;
+    }
+}
+
+.pricing h2 {
+   padding-bottom: 20px;
+}
+
+.pricing-tables {
+    padding: 40px 35px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 0 13px 2px rgb(189, 184, 184);
+}
+
+.pricing-items ul {
+    margin: 40px 0;
+}
+
+.pricing-items ul li {
+    list-style-type:none ;
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.pricing-items .price  h3{
+    padding: 20px;
+    font-size: 30px;
+}
+
+.pricing-items .price {
+   border-width: 0;
+   padding: 10px 0;
+   border-radius: 20px;
+   background-color: rgb(87, 65, 185);
+   color: white;
+   margin-top: 20px;
+}
+
+.pricing-items .price-btn{
+    display: block;
+    padding:15px 20px;
+    margin: auto;
+    background-color: rgb(87, 65, 185);
+    color: white;
+    border-width: 0;
+    border-radius: 40px;
+}
+.pricing-items .price-btn:hover {
+    background-color: rgb(209, 52, 162);
+    transition: .3s ease-out;
+}
+
+.pricing-items #premium{
+    background-color: rgb(209, 52, 162);
+}
+
