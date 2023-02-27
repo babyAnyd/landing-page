@@ -23,3 +23,36 @@ function clicked() {
     getWidthSize.style.display = "none";
   }
 }
+
+// counting
+
+const countOne = document.querySelector(".countOne");
+const countTwo = document.querySelector(".countTwo");
+const countThree = document.querySelector(".countThree");
+const countFour = document.querySelector(".countFour");
+
+function countProjects(selector, end) {
+  let from = 1;
+  let to = end;
+  let step = to > from ? 1 : -1;
+  let interval = 20;
+
+  if (from === to) {
+    selector.textContent = from;
+    return;
+  }
+
+  let counter = setInterval(() => {
+    from += step;
+    selector.textContent = from;
+
+    if (from === to) {
+      clearInterval(counter);
+    }
+  }, interval);
+}
+
+countProjects(countOne, 126);
+countProjects(countTwo, 63);
+countProjects(countThree, 18);
+countProjects(countFour, 27);

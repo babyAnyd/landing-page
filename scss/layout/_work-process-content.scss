@@ -71,3 +71,17 @@
 .process-items i {
     color: rgb(235, 142, 235);
 }
+
+.process-items {
+    top: 0;
+}
+
+.process-items:hover {
+    position: relative;
+    top: -20px;
+    transition:  top .4s ease-out;
+    -moz-transition: top .4s ease-out;
+    -o-transition: top .4s ease-out;
+    -webkit-transition: top .4s ease-out;
+    cursor:default;
+}

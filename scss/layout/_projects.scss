@@ -1,0 +1,53 @@
+
+.section-projects {
+    background-image: linear-gradient(90deg, rgba(249, 145, 229, .5), rgba(126, 129, 227, .5)), url(/images/group.jpg.crdownload);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 980px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    @include for-desktop {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2,1fr);
+        gap: 60px;
+        width: 90%;
+    }
+    @include for-small-phone {
+        grid-template-columns: repeat(1, 1fr);
+        width: 80%;
+        gap: 10px;
+        padding: 60px 0;
+    }
+}
+
+ .project-items h1 {
+    margin-bottom: 20px;
+}
+
+.project-items {
+    top: 0;
+}
+
+.project-items:hover {
+    position: relative;
+    top: -20px;
+    transition: top .4s ease-out;
+    -webkit-transition:top .4s ease-out ;
+    -moz-transition: top .4s ease-out;
+    -o-transition: top .4s ease-out;
+}
