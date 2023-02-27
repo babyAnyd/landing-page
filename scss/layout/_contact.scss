@@ -1,0 +1,109 @@
+.section-contact {
+    background-color: #f2f2fe;
+    min-height:500px ;
+   
+}
+
+
+.contact-parent {
+    padding: 100px 0;
+}
+
+.contact-us {
+    max-width: 980px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 100px;
+    gap:  30px;
+    @include for-desktop {
+        width: 90%;
+    }
+    @include for-large-phone {
+        width: 80%;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+
+#contact-title {
+    text-align: center;
+    grid-column: span 2;
+    @include for-large-phone {
+        grid-column: span 1;
+    }
+}
+
+
+
+#contact-title h3 {
+    margin-bottom: 25px;
+}
+
+
+.contact-items h3 {
+    margin-bottom: 50px;
+}
+// .contact-items p {
+//     margin: 40px 0 ;
+// }
+
+.contact-items p {
+    margin: 40px 0;
+}
+
+.contact-items .inputs {
+    width: 250px;
+    height: 40px;
+    border-width: 0;
+    padding: 15px;
+    border-radius: 30px;
+    @include for-large-phone {
+        width: 100%;
+    }
+}
+
+
+.contact-items .row-inputs {
+    display: flex;
+    gap: 20px;  
+    @include for-large-phone {
+        flex-direction: column;
+    }
+}
+
+
+.contact-items textarea {
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+    padding: 20px;
+    border-radius: 30px;
+  
+}
+
+.contact-items fieldset {
+    border: none;
+    width: 100%;
+}
+
+
+#submit {
+    padding: 20px;
+}
+
+#submit {
+    width: 130px;
+    padding: 15px 10px;
+    border-radius: 40px;
+    font-size: 14px;
+    border-width: 0;
+    margin-top: 20px;
+    background-color: rgb(109, 87, 190);
+    color: white;
+}
+
+#submit:hover {
+    background-color: rgb(240, 136, 171);
+    transition: .3s ease-in-out;
+}
